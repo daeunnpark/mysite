@@ -25,7 +25,7 @@ SECRET_KEY = 'cnt1+aubnlo=t&osb=dz(y#z$g!jp4j#rt_ez2!))pfne@a71z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1']
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'chatterbot.ext.django_chatterbot',
 ]
 
 MIDDLEWARE = [
