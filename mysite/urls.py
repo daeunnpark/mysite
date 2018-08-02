@@ -16,11 +16,12 @@ Including another URLconf
 #from django.conf.urls import url
 from django.conf.urls import include, url
 from django.contrib import admin
-from myapp import views as v
+from django.views.generic.base import TemplateView
+#from myapp import views as v
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', v.index),
+    url(r'^$', TemplateView.as_view(template_name='index.html'),name='home'),
     #url(r'^chatterbot/', include('chatterbot.ext.django_chatterbot.urls')),
     #url(r'^chatterbot/',include('chatterbot.ext.django_chatterbot.urls',namespace='chatterbot')),  
 ]
