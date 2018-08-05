@@ -1,4 +1,4 @@
-#!/Users/Daeun/django/mysite/ENV/bin/python
+#!/Users/Daeun/Desktop/mysite/ENV/bin/python
 
 import sys
 import getopt
