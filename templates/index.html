@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,15 +13,16 @@
     <title>Daeun Park</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+   <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
 
     <!-- Custom fonts for this template -->
+    <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="{% static 'css/grayscale.min.css' %}" rel="stylesheet">
-    
 
   </head>
 
@@ -50,37 +52,14 @@
       </div>
     </nav>
 
-<!--  #bdf9dc #ffc100 #f94e05 #7c00ff #e8cff9-->
-<div class = "container">
-  <script type = "text/javascript">
-     (function () {
-    var div = document.createElement("div");
-    document.getElementsByTagName('body')[0].appendChild(div);
-    div.outerHTML = "<div id='botDiv' style='height: 40px; width: 300px; right: 0; position: fixed;  bottom: 0; z-index: 1000; border: thin solid #b5c3cb; background-color: #fff' ><div id='botTitleBar' style='height: 40px; width: 300px; right: 0; position:fixed;  cursor: pointer; background-color: #bdf9dc'> <p style = 'font-size: 150%; display:inline'> &nbsp chat</p> <p style = 'display:inline; text-align: 'right' '> _ </p> </div><iframe width='300px' height='400px' align='right'; src='https://webchat.botframework.com/embed/DaeunBotDemo?s=8l8NFaIirvQ.cwA.OH0.G7Vdb3PptH8rFRVaEQsdXQmFSzeE4ldRHkIqOPInOfQ'></iframe></div>"; 
-
-    document.querySelector('body').addEventListener('click', function (e) {
-        e.target.matches = e.target.matches || e.target.msMatchesSelector;
-        if (e.target.matches('#botTitleBar')) { 
-            var botDiv = document.querySelector('#botDiv'); 
-            botDiv.style.height = botDiv.style.height == '400px' ? '40px' : '400px';
-        };
-    });
-}());
-  </script>
-</div>
-
-   <!--  <iframe src='https://webchat.botframework.com/embed/DaeunBotDemo?s=8l8NFaIirvQ.cwA.OH0.G7Vdb3PptH8rFRVaEQsdXQmFSzeE4ldRHkIqOPInOfQ'  height="400" width="300" align ="right"></iframe>-->
-
-
     <!-- Header -->
     <header class="masthead">
-      <div class="container d-flex h-50 align-items-center">
-        <!--<div class="mx-auto text-center">-->
-          <h1 class="my-0 text-uppercase"> " </h1>
-          <h2 class= "my-auto text-white-50"> I'm an aspiring programmer. <br/> I like bla blabla. </h2>
-
-          <!--<h2 class="text-white-50 mx-2"> </h2>-->
-          <!--<a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>-->
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+          <h1 class="mx-auto my-0 text-uppercase">"</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">I'm an aspiring software developer.</h2>
+          <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+        </div>
       </div>
     </header>
 
@@ -90,10 +69,11 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2 class="text-white mb-4">Built with Bootstrap 4</h2>
-            <p class="text-white-50"> What I like/ background </p>
+            <p class="text-white-50">I can do bla bla bla
+              <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. bla bla bla bla bla bla bla bla bla.</p>
           </div>
         </div>
-        <img src="{% static 'img/demo-image-01.jpg' %}" class="img-fluid" alt="">
+        <img src="{% static 'img/ipad.png' %}" class="img-fluid" alt="">
       </div>
     </section>
 
@@ -104,12 +84,12 @@
         <!-- Featured Project Row -->
         <div class="row align-items-center no-gutters mb-4 mb-lg-5">
           <div class="col-xl-8 col-lg-7">
-            <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/demo-image-01.jpg' %}" alt="">
+            <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/bg-masthead.jpg'%}" alt="">
           </div>
           <div class="col-xl-4 col-lg-5">
             <div class="featured-text text-center text-lg-left">
               <h4>Shoreline</h4>
-              <p class="text-black-50 mb-0">Projects in Java, JavaFx, Pythom, HTML, CSS, C.</p>
+              <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
             </div>
           </div>
         </div>
@@ -135,7 +115,7 @@
         <!-- Project Two Row -->
         <div class="row justify-content-center no-gutters">
           <div class="col-lg-6">
-            <img class="img-fluid" src="{% static 'img/demo-image-02 copy.jpg' %}" alt="">
+            <img class="img-fluid" src="{% static 'img/demo-image-02.jpg' %}" alt="">
           </div>
           <div class="col-lg-6 order-lg-first">
             <div class="bg-black text-center h-100 project">
@@ -153,9 +133,8 @@
       </div>
     </section>
 
-
     <!-- Contact Section -->
-    <section id = "contact" class="contact-section bg-black">
+    <section id = "contact" class="contact-section">
       <div class="container">
 
         <div class="row">
@@ -163,7 +142,7 @@
           <div class="col-md-4 mb-3 mb-md-0">
             <div class="card py-4 h-100">
               <div class="card-body text-center">
-                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                <i class="fas fa-envelope text-primary mb-2" style="font-size:50px;"></i>
                 <h4 class="text-uppercase m-0">Email</h4>
                 <hr class="my-4">
                 <div class="small text-black-50">
@@ -176,7 +155,7 @@
           <div class="col-md-4 mb-3 mb-md-0">
             <div class="card py-4 h-100">
               <div class="card-body text-center">
-                <i class="fas fa-envelope text-primary mb-2"></i>
+                <i class ="fab fa-linkedin-in text-primary mb-2" style="font-size:50px;"></i>
                 <h4 class="text-uppercase m-0">LinkedIn</h4>
                 <hr class="my-4">
                 <div class="small text-black-50">
@@ -189,59 +168,56 @@
           <div class="col-md-4 mb-3 mb-md-0">
             <div class="card py-4 h-100">
               <div class="card-body text-center">
-                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                <i class="fab fa-git text-primary mb-2" style="font-size:55px;"></i>
                 <h4 class="text-uppercase m-0">Github</h4>
                 <hr class="my-4">
-                <div class="small text-black-50">​
-                   <a href="github.com/daeunnpark">github.com/daeunnpark</a>
+                <div class="small text-black-50">
+                  <a href="github.com/daeunnpark">github.com/daeunnpark</a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="social d-flex justify-content-center">
-          <a href="#" class="mx-2">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#" class="mx-2">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="mx-2">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
+        </div>      
 
       </div>
     </section>
 
 
- <!-- Footer  small text-center-->
-    <footer class="bg-black text-white-50" id="foot">
-      <div class="container text-center">
-        <h1 class="my-0 text-uppercase text-right"> " </h1>
-        <p>Copyright &copy; Your Website 2018</p>
-      </div>
+    <div class = "container">
+      <script type = "text/javascript">
+         (function () {
+        var div = document.createElement("div");
+        document.getElementsByTagName('body')[0].appendChild(div);
+        div.outerHTML = "<div id='botDiv' style='height: 40px; width: 300px; right: 0; position: fixed;  bottom: 0; z-index: 1000; border: thin solid #b5c3cb; background-color: #fff' ><div id='botTitleBar' style='height: 40px; width: 300px; right: 0; position:fixed;  cursor: pointer; background-color: #bdf9dc'> <p style = 'font-size: 150%; display:inline'> &nbsp chat</p> <p style = 'display:inline; text-align: 'right' '> _ </p> </div><iframe width='300px' height='400px' align='right'; src='https://webchat.botframework.com/embed/DaeunBotDemo?s=8l8NFaIirvQ.cwA.OH0.G7Vdb3PptH8rFRVaEQsdXQmFSzeE4ldRHkIqOPInOfQ'></iframe></div>"; 
 
-      
+        document.querySelector('body').addEventListener('click', function (e) {
+            e.target.matches = e.target.matches || e.target.msMatchesSelector;
+            if (e.target.matches('#botTitleBar')) { 
+                var botDiv = document.querySelector('#botDiv'); 
+                botDiv.style.height = botDiv.style.height == '400px' ? '40px' : '400px';
+            };
+        });
+    }());
+      </script>
+    </div>
+
+    <!-- Footer -->
+    <footer class="small text-center ">
+      <div class="container">
+        Copyright &copy; Daeun 2018
+      </div>
     </footer>
 
-
-   
-
-
     <!-- Bootstrap core JavaScript -->
-    <script src="{% static 'vendor/jquery/jquery.min.js'% }"></script>
-    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js'% }"></script>
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="{% static 'vendor/font-awesome/js/all.js'% }"></script>
-    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js'% }"></script>
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="{% static 'js/grayscale.min.js'% }"></script>
-
-
+    <script src="{% static 'js/grayscale.min.js' %}"></script>
 
   </body>
 

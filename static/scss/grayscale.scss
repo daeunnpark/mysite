@@ -5,9 +5,15 @@
 @import 'buttons.scss';
 @import 'about.scss';
 @import 'projects.scss';
-@import 'signup.scss';
 @import 'contact.scss';
 
+html{
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-masthead.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
 body {
   font-family: 'Nunito';
   letter-spacing: 0.0625em;
