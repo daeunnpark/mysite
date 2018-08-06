@@ -20,10 +20,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) # where m
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__)) # where settings.py is
 
 STATICFILES_DIRS = (
-    #'/Users/Daeun/Desktop/mysite/static'
-    os.path.join(BASE_DIR,'static'),
+  os.path.join(BASE_DIR,'static'),
 )
-
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
