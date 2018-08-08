@@ -192,6 +192,7 @@
 }
 
 .projects-section .project-text {
+  background-color: transparent;
   padding: 3rem;
   font-size: 90%;
 }
@@ -199,11 +200,6 @@
 @media (min-width: 992px) {
   .projects-section .project-text {
     padding: 5rem;
-  }
-  .projects-section .project-text hr {
-    border-color: #64a19d;
-    border-width: .25rem;
-    width: 30%;
   }
 }
 
@@ -241,16 +237,8 @@
   width: 3rem;
   border-radius: 100%;
   line-height: 3rem;
-  color: rgba(255, 255, 255, 0.3);
 }
 
-.contact-section .social a:hover {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.contact-section .social a:active {
-  color: #fff;
-}
 
 body {
   font-family: 'Nunito';

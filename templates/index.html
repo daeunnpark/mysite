@@ -1,3 +1,4 @@
+
 {% load static %}
 
 <!DOCTYPE html>
@@ -57,8 +58,8 @@
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
           <h1 class="mx-auto my-0 text-uppercase">"</h1>
-          <h2 class="text-white-50 mx-auto mt-2 mb-5">I'm an aspiring software developer.</h2>
-          <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">I'm an aspiring software developer, who loves travelling.</h2>
+          <!-- <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>-->
         </div>
       </div>
     </header>
@@ -80,30 +81,20 @@
     <section id="projects" class="projects-section bg-light">
       <div class="container">
 
-        <!-- Featured Project Row -->
-        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-          <div class="col-xl-8 col-lg-7">
-            <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/bg-masthead.jpg'%}" alt="">
-          </div>
-          <div class="col-xl-4 col-lg-5">
-            <div class="featured-text text-center text-lg-left">
-              <h4>Shoreline</h4>
-              <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project One Row -->
+           <!-- Project 1 Row -->
         <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
           <div class="col-lg-6">
             <img class="img-fluid" src="{% static 'img/demo-image-01.jpg' %}" alt="">
           </div>
           <div class="col-lg-6">
-            <div class="bg-black text-center h-100 project">
+            <div class="text-center h-100 project">
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 class="text-white">Misty</h4>
-                  <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                  <h4 class="text-white"> D-Bot </h4>
+                  <h4 class="text-white"> (TOPUTTOPUT), 2018 </h4>
+                  <p class="mb-0 text-50"> D-Bot is a chatbot representing myself(Daeun). </p>
+                  <p>D-Bot answers questions(project-related or personal) about me.</p>
+                  <a href="https://github.com/daeunnpark/mysite" class="btn btn-primary ">Know more about this!</a>
                   <hr class="d-none d-lg-block mb-0 ml-0">
                 </div>
               </div>
@@ -111,23 +102,76 @@
           </div>
         </div>
 
-        <!-- Project Two Row -->
+
+   <!-- Project 2 Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="{% static 'img/demo-image-01.jpg' %}" alt="">
+          </div>
+          <div class="col-lg-6">
+            <div class="text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                  <h4 class="text-white"> Defragmentation Tool </h4>
+                  <h4 class="text-white"> (C), 2018 </h4>
+                  <p class="mb-0 text-50">Defragmentation Tool is a tool to defragment emulated memory, minimizing memory leaks.</p>
+                  <p>Based on bubble sorting algorithm, Defragmentation Tool increases efficiency of memory management by allocating memory dynamically.</p>
+                  <a href="https://github.com/daeunnpark/Defragmentation_Tool" class="btn btn-primary ">Know more about this!</a>
+                  <hr class="d-none d-lg-block mb-0 ml-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    <!-- Project 3 Row -->  
         <div class="row justify-content-center no-gutters">
           <div class="col-lg-6">
-            <img class="img-fluid" src="{% static 'img/demo-image-02.jpg' %}" alt="">
+            <img class="img-fluid" src="{% static 'img/demo-image-01.jpg' %}" alt="">
           </div>
           <div class="col-lg-6 order-lg-first">
-            <div class="bg-black text-center h-100 project">
+            <div class="text-center h-100 project">
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 class="text-white">Mountains</h4>
-                  <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                  <h4 class="text-white"> Ncolors </h4>
+                  <h4 class="text-white"> (Java, XML), 2017 </h4>
+                  <p class="mb-0 text-50">Ncolors is an Android mobile application allowing users to design their nails by utilizing Android Studio.</p>
+                  <p>Ncolors offers multiple design sources(photo importing) and tools (drawing functionalities). </p>
+                  <a href="https://github.com/daeunnpark/Ncolors" class="btn btn-primary ">Know more about this!</a>
                   <hr class="d-none d-lg-block mb-0 mr-0">
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+
+
+   <!-- Project 4 Row -->
+       <div class="row justify-content-center no-gutters">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="{% static 'img/demo-image-01.jpg' %}" alt="">
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-right">
+                  <h4 class="text-white">Metro Map Maker</h4>
+                  <h4 class="text-white"> (Java, JavaFX), 2017 </h4>
+                  <p class="mb-0 text-50">Metro Map Maker is a web application allowing users to make and edit subway maps.</p> 
+                  <p>A set of tools to build graphical representations of city subway systems are available.</p>
+                  <a href="https://github.com/daeunnpark/M3" class="btn btn-primary ">Know more about this!</a>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
 
       </div>
     </section>
@@ -158,7 +202,7 @@
                 <h4 class="text-uppercase m-0">LinkedIn</h4>
                 <hr class="my-4">
                 <div class="small text-black-50">
-                  <a href="linkedin.com/in/daeun-park​">linkedin.com/in/daeun-park​</a>
+                  <a href="linkedin.com/in/daeun-park​">https://www.linkedin.com/in/daeun-park/</a>
                 </div>
               </div>
             </div>
@@ -171,7 +215,7 @@
                 <h4 class="text-uppercase m-0">Github</h4>
                 <hr class="my-4">
                 <div class="small text-black-50">
-                  <a href="github.com/daeunnpark">github.com/daeunnpark</a>
+                  <a href="github.com/daeunnpark">https://github.com/daeunnpark</a>
                 </div>
               </div>
             </div>
@@ -182,7 +226,7 @@
       </div>
     </section>
 
-
+<!-- 
     <div class = "container">
       <script type = "text/javascript">
          (function () {
@@ -200,12 +244,18 @@
     }());
       </script>
     </div>
+    -->
+
+
 
     <!-- Footer -->
     <footer class="small text-center ">
       <div class="container">
         Copyright &copy; Daeun 2018
       </div>
+
+          <iframe src='https://webchat.botframework.com/embed/DaeunBotDemo?s=8l8NFaIirvQ.cwA.OH0.G7Vdb3PptH8rFRVaEQsdXQmFSzeE4ldRHkIqOPInOfQ'></iframe>
+          
     </footer>
 
     <!-- Bootstrap core JavaScript -->

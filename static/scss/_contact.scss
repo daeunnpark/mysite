@@ -24,13 +24,6 @@
       width: 3rem;
       border-radius: 100%;
       line-height: 3rem;
-      color: fade-out($white, 0.7);
-      &:hover {
-        color: fade-out($white, 0.5);
-      }
-      &:active {
-        color: $white;
-      }
     }
   }
 }
