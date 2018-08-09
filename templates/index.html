@@ -84,7 +84,7 @@
            <!-- Project 1 Row -->
         <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
           <div class="col-lg-6">
-            <img class="img-fluid" src="{% static 'img/demo-image-01.jpg' %}" alt="">
+            <img class="img-fluid" src="{% static 'img/demo-image-01.jpg' %}" alt="" height= "300" width="400">
           </div>
           <div class="col-lg-6">
             <div class="text-center h-100 project">
@@ -107,7 +107,7 @@
    <!-- Project 2 Row -->
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
           <div class="col-lg-6">
-            <img class="img-fluid" src="{% static 'img/demo-image-01.jpg' %}" alt="">
+            <img class="img-fluid" src="{% static 'img/defrag3.png' %}" alt=""  height= "300" width="400"s>
           </div>
           <div class="col-lg-6">
             <div class="text-center h-100 project">
@@ -129,7 +129,7 @@
     <!-- Project 3 Row -->  
         <div class="row justify-content-center no-gutters">
           <div class="col-lg-6">
-            <img class="img-fluid" src="{% static 'img/demo-image-01.jpg' %}" alt="">
+            <img class="img-fluid" src="{% static 'img/Ncolors.png' %}" alt=""  height= "300" width="400">
           </div>
           <div class="col-lg-6 order-lg-first">
             <div class="text-center h-100 project">
@@ -233,7 +233,7 @@
          (function () {
         var div = document.createElement("div");
         document.getElementsByTagName('body')[0].appendChild(div);
-        div.outerHTML = "<div id='botDiv' style='height: 40px; width: 300px; right: 0; position: fixed;  bottom: 0; z-index: 1000; border: thin solid #b5c3cb; background-color: #fff' ><div id='botTitleBar' style='height: 40px; width: 300px; right: 0; position:fixed;  cursor: pointer; background-color: #bdf9dc'> <p style = 'font-size: 150%; display:inline'> &nbsp chat</p> <p style = 'display:inline; text-align: 'right' '> _ </p> </div><iframe width='300px' height='400px' align='right'; src='https://webchat.botframework.com/embed/DaeunBotDemo?s=8l8NFaIirvQ.cwA.YQE.M30OrL3yhkS8R3szS_pD1PHokLxCGwQqRiUEolctKEE'></iframe></div>"; 
+        div.outerHTML = "<div id='botDiv' style='height: 40px; width: 300px; right: 0; position: fixed;  bottom: 0; z-index: 1000; border: thin solid #b5c3cb; background-color: #fff' ><div id='botTitleBar' style='height: 40px; width: 300px; right: 0; position:fixed;  cursor: pointer; background-color: #bdf9dc'> <p style = 'font-size: 150%; display:inline'> &nbsp chat</p> </div><iframe width='300px' height='400px' align='right'; src='https://webchat.botframework.com/embed/DaeunBotDemo?s=8l8NFaIirvQ.cwA.YQE.M30OrL3yhkS8R3szS_pD1PHokLxCGwQqRiUEolctKEE'></iframe></div>"; 
 
         document.querySelector('body').addEventListener('click', function (e) {
             e.target.matches = e.target.matches || e.target.msMatchesSelector;
